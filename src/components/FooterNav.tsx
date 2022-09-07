@@ -19,17 +19,17 @@ interface NavItem {
 
 const NAV: NavItem[] = [
   {
-    name: "Explore",
+    name: "Inicio",
     link: "/",
     icon: MagnifyingGlassIcon,
   },
   {
-    name: "Wishlists",
+    name: "Favoritos",
     link: "/account-savelists",
     icon: HeartIcon,
   },
   {
-    name: "Log in",
+    name: "Ingresar",
     link: "/account",
     icon: UserCircleIcon,
   },

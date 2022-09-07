@@ -31,14 +31,12 @@ const SiteHeader = () => {
   const anchorRef = React.useRef<HTMLDivElement>(null);
 
   let [headers] = React.useState<SiteHeaders[]>([
-    "Header 1",
-    "Header 2",
-    "Header 3",
+    "Header 2"
   ]);
 
   let [homePages] = React.useState<HomePageItem[]>([
     {
-      name: "Home Main",
+      name: "Pagina Inicio",
       slug: "/",
     },
     {
@@ -51,7 +49,7 @@ const SiteHeader = () => {
     },
   ]);
   const [headerSelected, setHeaderSelected] =
-    React.useState<SiteHeaders>("Header 1");
+    React.useState<SiteHeaders>("Header 2");
 
   const [isTopOfPage, setIsTopOfPage] = React.useState(window.pageYOffset < 5);
   const location = useLocation();
@@ -67,7 +65,7 @@ const SiteHeader = () => {
       setHeaderSelected("Header 2");
     }
     if (location.pathname === "/") {
-      setHeaderSelected("Header 1");
+      setHeaderSelected("Header 2");
     }
 
     // disconnect the observer
@@ -210,7 +208,7 @@ const SiteHeader = () => {
   return (
     <>
       <Helmet>
-        <title>Chisfis || Booking React Template</title>
+        <title>Travia</title>
       </Helmet>
       {renderControlSelections()}
       {renderHeader()}

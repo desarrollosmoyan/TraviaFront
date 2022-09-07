@@ -95,10 +95,10 @@ const GuestsInput: FC<GuestsInputProps> = ({
               </div>
               <div className="flex-grow">
                 <span className="block xl:text-lg font-semibold">
-                  {totalGuests || ""} Guests
+                  {totalGuests || ""} Personas
                 </span>
                 <span className="block mt-1 text-sm text-neutral-400 leading-none font-light">
-                  {totalGuests ? "Guests" : "Add guests"}
+                  {totalGuests ? "Personas" : "Agregar Personas"}
                 </span>
               </div>
             </Popover.Button>
@@ -138,16 +138,16 @@ const GuestsInput: FC<GuestsInputProps> = ({
                 onChange={(value) => handleChangeData(value, "guestAdults")}
                 max={10}
                 min={1}
-                label="Adults"
-                desc="Ages 13 or above"
+                label="Adultos"
+                desc="Moyores de 13 años"
               />
               <NcInputNumber
                 className="w-full mt-6"
                 defaultValue={guestChildrenInputValue}
                 onChange={(value) => handleChangeData(value, "guestChildren")}
                 max={4}
-                label="Children"
-                desc="Ages 2–12"
+                label="Niños"
+                desc="de 2 a 12 años"
               />
 
               <NcInputNumber
@@ -155,8 +155,8 @@ const GuestsInput: FC<GuestsInputProps> = ({
                 defaultValue={guestInfantsInputValue}
                 onChange={(value) => handleChangeData(value, "guestInfants")}
                 max={4}
-                label="Infants"
-                desc="Ages 0–2"
+                label="Infantes"
+                desc="de 0 a 2 años"
               />
             </Popover.Panel>
           </Transition>

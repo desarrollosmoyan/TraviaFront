@@ -13,22 +13,22 @@ import Avatar from "shared/Avatar/Avatar";
 
 const solutions = [
   {
-    name: "Account",
+    name: "Cuenta",
     href: "/author",
     icon: UserCircleIcon,
   },
   {
-    name: "Messages",
+    name: "Bandeja de Entrada",
     href: "##",
     icon: ChatBubbleBottomCenterTextIcon,
   },
   {
-    name: "Wishlists",
+    name: "Favoritos",
     href: "/account-savelists",
     icon: HeartIcon,
   },
   {
-    name: "Booking",
+    name: "Reservas",
     href: "##",
     icon: HomeIcon,
   },
@@ -36,13 +36,13 @@ const solutions = [
 
 const solutionsFoot = [
   {
-    name: "Help",
+    name: "Ayuda",
     href: "##",
     icon: LifebuoyIcon,
   },
 
   {
-    name: "Logout",
+    name: "Salir",
     href: "##",
     icon: ArrowRightOnRectangleIcon,
   },

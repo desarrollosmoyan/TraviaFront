@@ -14,27 +14,14 @@ interface SolutionItem {
 
 const solutions: SolutionItem[] = [
   {
-    name: "Stays",
-    description: "Stays rental description ",
-    href: "/listing-stay",
-    icon: IconFour,
-    active: true,
-  },
-  {
-    name: "Flights",
-    description: "Flights description",
-    href: "/listing-flights",
-    icon: IconTwo,
-  },
-  {
-    name: "Things to do",
-    description: "Tour and experiences",
+    name: "Experiencias / Tours",
+    description: "Disfrutas de experiencias unicas",
     href: "/listing-experiences",
     icon: IconOne,
   },
   {
-    name: "Cars",
-    description: "Car rental description",
+    name: "Traslados",
+    description: "Disfruta de traslados seguros",
     href: "/listing-car",
     icon: IconThree,
   },
@@ -51,7 +38,7 @@ export default function DropdownTravelers() {
                 group py-2 rounded-md text-sm sm:text-base font-medium hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
             >
               <div className={` inline-flex items-center `} role="button">
-                <span>Travelers</span>
+                <span>Servicios</span>
                 <ChevronDownIcon
                   className={`${open ? "-rotate-180" : "text-opacity-70 "}
                   ml-2 h-5 w-5 text-neutral-700 group-hover:text-opacity-80 transition ease-in-out duration-150 `}
@@ -100,13 +87,9 @@ export default function DropdownTravelers() {
                       to="##"
                       className="flow-root px-2 py-2 space-y-0.5 transition duration-150 ease-in-out rounded-md focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                     >
-                      <span className="flex items-center">
-                        <span className="text-sm font-medium ">
-                          Documentation
-                        </span>
-                      </span>
+                    
                       <span className="block text-sm text-gray-500 dark:text-neutral-400">
-                        Start integrating products and tools
+                        Contactar con asesor
                       </span>
                     </Link>
                   </div>

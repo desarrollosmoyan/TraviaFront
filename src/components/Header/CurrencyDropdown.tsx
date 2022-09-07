@@ -2,45 +2,29 @@ import { Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import {
   CurrencyDollarIcon,
-  CurrencyBangladeshiIcon,
-  CurrencyEuroIcon,
-  CurrencyPoundIcon,
-  CurrencyRupeeIcon,
   BanknotesIcon,
 } from "@heroicons/react/24/outline";
 import { Fragment } from "react";
 
 export const headerCurrency = [
   {
-    id: "EUR",
-    name: "EUR",
-    href: "##",
-    icon: CurrencyEuroIcon,
-    active: true,
-  },
-  {
     id: "USD",
     name: "USD",
-    href: "##",
+    href: "#USD",
+    icon: CurrencyDollarIcon,
+    active: true
+  },
+  {
+    id: "COP",
+    name: "COP",
+    href: "#COP",
     icon: CurrencyDollarIcon,
   },
   {
-    id: "GBF",
-    name: "GBF",
-    href: "##",
-    icon: CurrencyBangladeshiIcon,
-  },
-  {
-    id: "SAR",
-    name: "SAR",
-    href: "##",
-    icon: CurrencyPoundIcon,
-  },
-  {
-    id: "QAR",
-    name: "QAR",
-    href: "##",
-    icon: CurrencyRupeeIcon,
+    id: "CLP",
+    name: "CLP",
+    href: "#CLP",
+    icon: CurrencyDollarIcon,
   },
 ];
 

@@ -114,7 +114,7 @@ export const pages: Page[] = [
 const Routes = () => {
   const WIN_WIDTH = useWindowSize().width || window.innerWidth;
   return (
-    <BrowserRouter basename="/chisfis">
+    <BrowserRouter basename="/">
       <ScrollToTop />
       <SiteHeader />
 

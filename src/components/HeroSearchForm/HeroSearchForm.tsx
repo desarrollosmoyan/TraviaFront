@@ -1,23 +1,21 @@
 import React, { FC, useState } from "react";
 import ExperiencesSearchForm from "./ExperiencesSearchForm";
-import StaySearchForm from "./StaySearchForm";
 import RentalCarSearchForm from "./RentalCarSearchForm";
-import FlightSearchForm from "./FlightSearchForm";
 
-export type SearchTab = "Stays" | "Experiences" | "Cars" | "Flights";
+export type SearchTab =  "Tours" | "Traslados" ;
 
 export interface HeroSearchFormProps {
   className?: string;
   currentTab?: SearchTab;
-  currentPage?: "Stays" | "Experiences" | "Cars" | "Flights";
+  currentPage?: "Tours" | "Traslados" ;
 }
 
 const HeroSearchForm: FC<HeroSearchFormProps> = ({
   className = "",
-  currentTab = "Stays",
+  currentTab = "Traslados",
   currentPage,
 }) => {
-  const tabs: SearchTab[] = ["Stays", "Experiences", "Cars", "Flights"];
+  const tabs: SearchTab[] = ["Tours", "Traslados"];
   const [tabActive, setTabActive] = useState<SearchTab>(currentTab);
 
   const renderTab = () => {
@@ -49,14 +47,10 @@ const HeroSearchForm: FC<HeroSearchFormProps> = ({
   const renderForm = () => {
     const isArchivePage = !!currentPage && !!currentTab;
     switch (tabActive) {
-      case "Stays":
-        return <StaySearchForm haveDefaultValue={isArchivePage} />;
-      case "Experiences":
+      case "Tours":
         return <ExperiencesSearchForm haveDefaultValue={isArchivePage} />;
-      case "Cars":
+      case "Traslados":
         return <RentalCarSearchForm haveDefaultValue={isArchivePage} />;
-      case "Flights":
-        return <FlightSearchForm haveDefaultValue={isArchivePage} />;
 
       default:
         return null;

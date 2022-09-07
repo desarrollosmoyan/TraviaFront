@@ -2,10 +2,8 @@ import React, { FC } from "react";
 import Logo from "shared/Logo/Logo";
 import MenuBar from "shared/MenuBar/MenuBar";
 import SwitchDarkMode from "shared/SwitchDarkMode/SwitchDarkMode";
-import LangDropdown from "./LangDropdown";
 import NotifyDropdown from "./NotifyDropdown";
 import AvatarDropdown from "./AvatarDropdown";
-import CurrencyDropdown from "./CurrencyDropdown";
 import DropdownTravelers from "./DropdownTravelers";
 import { Link } from "react-router-dom";
 import HeroSearchForm2MobileFactory from "components/HeroSearchForm2Mobile/HeroSearchForm2MobileFactory";
@@ -32,15 +30,15 @@ const MainNav2: FC<MainNav2Props> = ({ className = "" }) => {
 
         <div className="hidden md:flex flex-shrink-0 items-center justify-end flex-1 lg:flex-none text-neutral-700 dark:text-neutral-100">
           <div className="hidden items-center lg:flex space-x-1">
-            <CurrencyDropdown />
-            <LangDropdown />
+            {/*<CurrencyDropdown /> */}
+            
             <Link
               to="/add-listing-1"
               className="
                 text-opacity-90
                 group px-4 py-2 border border-neutral-300 hover:border-neutral-400 dark:border-neutral-700 rounded-full inline-flex items-center text-sm text-gray-700 dark:text-neutral-300 font-medium hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
             >
-              List your property
+              Se un vendedor
             </Link>
 
             <div></div>

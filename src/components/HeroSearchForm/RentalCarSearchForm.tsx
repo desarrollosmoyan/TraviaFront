@@ -23,8 +23,8 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({
   haveDefaultValue,
 }) => {
   // DEFAULT DATA FOR ARCHIVE PAGE
-  const defaultPickUpInputValue = "Tokyo, Jappan";
-  const defaultDropOffInputValue = "Paris, France";
+  const defaultPickUpInputValue = "Chile, Colombia";
+  const defaultDropOffInputValue = "Colombia, Chile";
 
   // USE STATE
   const [dateRangeValue, setDateRangeValue] = useState<DateRage>({
@@ -69,7 +69,7 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({
           }`}
           onClick={(e) => setDropOffLocationType("same")}
         >
-          Same drop off
+          Desde el aeropuerto
         </div>
         <div
           className={`py-1.5 px-4 flex items-center rounded-full font-medium text-xs cursor-pointer mr-2 my-1 sm:mr-4 ${
@@ -79,7 +79,7 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({
           }`}
           onClick={(e) => setDropOffLocationType("different")}
         >
-          Different drop off
+          Hacia el aeropuerto
         </div>
       </div>
     );
@@ -102,8 +102,8 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({
                       : "startDate"
                   )
                 }
-                placeHolder="City or Airport"
-                desc="Pick up location"
+                placeHolder="Ciudad "
+                desc="Aeropuerto"
                 className="flex-1"
               />
               {dropOffLocationType === "different" && (
@@ -111,8 +111,8 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({
                   defaultValue={dropOffInputValue}
                   onChange={(e) => setDropOffInputValue(e)}
                   onInputDone={() => setFieldFocused("startDate")}
-                  placeHolder="City or Airport"
-                  desc="Drop off location"
+                  placeHolder="Ciudad o Aeropuerto"
+                  desc="Punto de netrega"
                   autoFocus={fieldFocused === "dropOffInput"}
                   className="flex-1"
                 />
