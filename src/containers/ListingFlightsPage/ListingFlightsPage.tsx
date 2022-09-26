@@ -79,7 +79,7 @@ const ListingFlightsPage: FC<ListingFlightsPageProps> = ({
 
       <div className="container relative">
         {/* SECTION HERO */}
-        <SectionHeroArchivePage
+        {/*<SectionHeroArchivePage
           currentPage="Flights"
           currentTab="Flights"
           listingType={
@@ -89,7 +89,7 @@ const ListingFlightsPage: FC<ListingFlightsPageProps> = ({
             </>
           }
           className="pt-10 pb-24 lg:pb-28 lg:pt-16 "
-        />
+        />*/}
 
         {/* SECTION */}
         <SectionGridFilterCard className="pb-24 lg:pb-28" />

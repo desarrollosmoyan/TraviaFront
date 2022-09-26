@@ -78,7 +78,7 @@ const ListingCarPage: FC<ListingCarPageProps> = ({ className = "" }) => {
       <BgGlassmorphism />
 
       <div className="container relative">
-        {/* SECTION HERO */}
+        {/* SECTION HERO 
         <SectionHeroArchivePage
           rightImage={heroRightImage}
           currentPage="Cars"
@@ -90,7 +90,7 @@ const ListingCarPage: FC<ListingCarPageProps> = ({ className = "" }) => {
             </>
           }
           className="pt-10 pb-24 lg:pb-28 lg:pt-16 "
-        />
+        />*/}
 
         {/* SECTION */}
         <SectionGridFilterCard className="pb-24 lg:pb-28" />

@@ -27,7 +27,7 @@ const ListingExperiencesMapPage: FC<ListingExperiencesMapPageProps> = ({
 
       {/* SECTION HERO */}
       <div className="container pt-10 pb-24 lg:pt-16 lg:pb-28">
-        <SectionHeroArchivePage
+        {/*<SectionHeroArchivePage
           currentPage="Experiences"
           currentTab="Experiences"
           listingType={
@@ -36,7 +36,7 @@ const ListingExperiencesMapPage: FC<ListingExperiencesMapPageProps> = ({
               <span className="ml-2.5">1599 experiences</span>
             </>
           }
-        />
+        />*/}
       </div>
 
       {/* SECTION */}

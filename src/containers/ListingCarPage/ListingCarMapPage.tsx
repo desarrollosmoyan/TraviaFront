@@ -26,7 +26,7 @@ const ListingCarMapPage: FC<ListingCarMapPageProps> = ({ className = "" }) => {
 
       {/* SECTION HERO */}
       <div className="container pt-10 pb-24 lg:pt-16 lg:pb-28">
-        <SectionHeroArchivePage
+        {/*<SectionHeroArchivePage
           rightImage={heroRightImage}
           currentPage="Cars"
           currentTab="Cars"
@@ -36,7 +36,7 @@ const ListingCarMapPage: FC<ListingCarMapPageProps> = ({ className = "" }) => {
               <span className="ml-2.5">1512 cars</span>
             </>
           }
-        />
+        />*/}
       </div>
 
       {/* SECTION */}

@@ -16,12 +16,12 @@ const AccountPage: FC<AccountPageProps> = ({ className = "" }) => {
   return (
     <div className={`nc-AccountPage ${className}`} data-nc-id="AccountPage">
       <Helmet>
-        <title>Account || Booking React Template</title>
+        <title>Perfil - Travia</title>
       </Helmet>
       <CommonLayout>
         <div className="space-y-6 sm:space-y-8">
           {/* HEADING */}
-          <h2 className="text-3xl font-semibold">Account infomation</h2>
+          <h2 className="text-3xl font-semibold">Información de la cuenta</h2>
           <div className="w-14 border-b border-neutral-200 dark:border-neutral-700"></div>
           <div className="flex flex-col md:flex-row">
             <div className="flex-shrink-0 flex items-start">

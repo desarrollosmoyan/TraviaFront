@@ -14,7 +14,7 @@ import Avatar from "shared/Avatar/Avatar";
 const solutions = [
   {
     name: "Cuenta",
-    href: "/author",
+    href: "/account",
     icon: UserCircleIcon,
   },
   {
